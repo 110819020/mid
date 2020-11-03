@@ -78,6 +78,25 @@ section {
     top: -143px;
 }
 
+.side {
+    position: absolute;
+    width: 351px;
+    height: 33px;
+    top: -33px;
+    left: 300px;
+    background-color: rgba(114,149,240,.5);
+}
+
+.side-text {
+    position: absolute;
+    font-size: 35px;
+    font-family: Rochester, cursive;
+    color: #FFFFFF;
+    line-height: 45px;
+    top: -27px;
+    left: -10px;
+}
+
 .text {
     width: 100%;
     height: 100%;

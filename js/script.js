@@ -13,7 +13,7 @@ $(document).ready(function(){
 
         if (end_height > navigation_height){
             $('nav').css('top', '-48px');
-            $('body').css('padding-top', '48');
+            $('body').css('padding-top', '48px');
             $('main').css('padding-top', '0');
         }else {
             $('nav').css('top', '0');
@@ -44,5 +44,9 @@ $(document).ready(function(){
     img.on("contextmenu",function(){return false;});
     img.on("dragstart",function(){return false;});
 
+    //主要區塊循序浮現
+    $(".fadein").each(function(i){
+        $(this).delay(800*i).animate({"opacity" : 1},1000);
+    });
 })
 

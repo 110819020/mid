@@ -152,6 +152,10 @@ section {
     opacity: 0;
 }
 
+.fadein {
+    opacity: 0;
+}
+
 .sec-main {
     height: 976px;
     width: 100%;
@@ -162,6 +166,13 @@ section {
     position: absolute;
     left: 710px;
     border: 5px solid #FFFFFF;
+}
+
+.game-name {
+    position: absolute;
+    left: 129px;
+    top: 145px;
+    font-family: Romanesco, cursive;
 }
 
 .release-date {
@@ -215,13 +226,6 @@ section {
     color: #FFFFFF;
     top: 820px;
     left: 22px;
-}
-
-.game-name {
-    position: absolute;
-    left: 129px;
-    top: 145px;
-    font-family: Romanesco, cursive;
 }
 
 .big {

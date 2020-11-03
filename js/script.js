@@ -13,7 +13,8 @@ $(document).ready(function(){
 
         if (end_height > navigation_height){
             $('nav').css('top', '-48px');
-            $('body').css('padding-top', '48')
+            $('body').css('padding-top', '48');
+            $('main').css('padding-top', '0');
         }else {
             $('nav').css('top', '0');
         }
@@ -24,15 +25,16 @@ $(document).ready(function(){
         start_height = $(document).scrollTop();
     });
 
+
     //div隨滑鼠移動浮現
-    $(window).scroll(function(){
+     $(window).scroll(function(){
         /* Check the location of each desired element */
         $('.hide').each(function(i){
-            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight()/2.5;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object ){
-                $(this).animate({'opacity':'1'},1500);
+                $(this).animate({'opacity':'1'},1000);
             }
         }); 
     });
@@ -41,5 +43,6 @@ $(document).ready(function(){
     var img=$("img");
     img.on("contextmenu",function(){return false;});
     img.on("dragstart",function(){return false;});
+
 })
 

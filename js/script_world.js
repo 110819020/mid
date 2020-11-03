@@ -40,13 +40,13 @@ $(function(){
     //切換燈箱圖片
     $('.hl').click(function(){
         if($(this).attr("id") == "1"){
-            $(".content img").attr("src","./img/hl_world1_img.png");
+            $(".content img").attr("src","../img/hl_world1_img.png");
         }
         else if($(this).attr("id") == "2"){
-            $(".content img").attr("src","./img/hl_world2_img.png");
+            $(".content img").attr("src","../img/hl_world2_img.png");
         }
         else if($(this).attr("id") == "3"){
-            $(".content img").attr("src","./img/hl_world3_img.png");
+            $(".content img").attr("src","../img/hl_world3_img.png");
         }
     });
 });

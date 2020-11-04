@@ -69,7 +69,7 @@ p {
 
 .logo img {
     rotate: 180;
-    width: 100%;
+    width: auto;
     height: 100%;
     -moz-transform:scaleX(-1);
     -webkit-transform:scaleX(-1);
@@ -183,7 +183,7 @@ section {
     top: 420px;
 }
 
-.release-date p {
+.release-date marquee {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: #FFFFFF;
@@ -365,16 +365,22 @@ section {
     margin-left: 10px;
 }
 
-.return {
-    width: 40px;
-    padding-top: 34px;
-    margin-left: 930px;
-    color: #FFFFFF;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+.return-btn {
+    position: fixed;
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    top: 90%;
+    left: 92%;
+    display: none;
 }
 
+.return-btn img {
+    width: 100%;
+    opacity: .3;
+    cursor: pointer;
+}
 
-.return:hover {
-    color: #AEBBC7;
+.return-btn img:hover {
+    opacity: 1;
 }

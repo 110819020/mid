@@ -3,6 +3,12 @@ $(function(){
     $("#header").load("header.html");
     $('#footer').load("footer.html");
 
+    //執行回到頂部
+	$('.return-btn').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 333);
+    });
+    
+
     $(window).scroll( function(){
         /* Check the location of each desired element */
         $('.hide').each( function(i){

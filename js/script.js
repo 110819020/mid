@@ -1,6 +1,6 @@
 $(document).ready(function(){   
     //執行回到頂部
-	$('.return').click(function(){ 
+	$('.return-btn').click(function(){ 
 		$('html,body').animate({scrollTop:0}, 333);
     });
     
@@ -15,6 +15,7 @@ $(document).ready(function(){
             $('nav').css('top', '-48px');
             $('body').css('padding-top', '48px');
             $('main').css('padding-top', '0');
+            $('.return-btn').css('display', 'block');
         }else {
             $('nav').css('top', '0');
         }

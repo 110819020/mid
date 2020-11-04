@@ -15,7 +15,6 @@ $(document).ready(function(){
             $('nav').css('top', '-48px');
             $('body').css('padding-top', '48px');
             $('main').css('padding-top', '0');
-            $('.return-btn').css('display', 'block');
         }else {
             $('nav').css('top', '0');
         }
@@ -49,5 +48,16 @@ $(document).ready(function(){
     $(".fadein").each(function(i){
         $(this).delay(800*i).animate({"opacity" : 1},1000);
     });
+
+    //顯示與消失回頂端按鈕
+    $(window).scroll(function(){
+        var px = 100;
+        if (document.body.scrollTop > px || document.documentElement.scrollTop > px) {
+            $('.return-btn').css('display', 'block');/*顯示*/
+        } else {
+            $('.return-btn').css('display', 'none');/*隱藏*/
+        }
+    })
+
 })
 

@@ -7,7 +7,7 @@ $(function(){
 	$('.return-btn').click(function(){ 
 		$('html,body').animate({scrollTop:0}, 333);
     });
-    
+
     
     $(window).scroll( function(){
         /* Check the location of each desired element */
@@ -53,4 +53,8 @@ $(function(){
             $(".content img").attr("src","./img/hl_world3_img.png");
         }
     });
+
+
+    //主要區域載入時浮現
+    $('.first').animate({"opacity" : 1},2000);
 });

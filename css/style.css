@@ -379,6 +379,7 @@ section {
     width: 100%;
     opacity: .3;
     cursor: pointer;
+    transition: all .2s;
 }
 
 .return-btn img:hover {

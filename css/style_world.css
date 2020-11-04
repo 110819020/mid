@@ -46,7 +46,7 @@ section {
     width: 1344px;
     height: 460px;
     margin: 79px 48px 158px 48px;
-    
+    opacity: 0;
 }
 
 .wrap {
@@ -210,10 +210,24 @@ section {
 
 .exit {
     position: absolute;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     width: 60px;
     height: 60px;
     top:40px;
     left: 1350px;
+    border-radius: 100%;
+    transition: all .5s;
+}
+
+.exit:hover {
+    background-color: rgba(240, 204, 112, .5);
+    filter:invert(100%);
+}
+
+.exit img {
+    width: 65%;
 }
 
 button {    
@@ -242,6 +256,7 @@ button img {
     width: 100%;
     opacity: .3;
     cursor: pointer;
+    transition: all .2s;
 }
 
 .return-btn img:hover {
